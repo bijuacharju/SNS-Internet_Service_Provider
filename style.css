@@ -793,7 +793,7 @@ img.shape-bottom {
 
 .price span {
   font-weight: 500;
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 
 .price {
