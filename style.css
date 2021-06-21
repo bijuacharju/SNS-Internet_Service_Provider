@@ -440,6 +440,11 @@ header#header.sticky-header {
 .mobile-menu {
   display: none;
 }
+.mainmenu ul {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+}
 .mainmenu ul li {
   display: inline-block;
 }
@@ -454,9 +459,25 @@ header#header.sticky-header {
 .logo {
   margin-top: 17px;
 }
-.mainmenu {
-  text-align: right;
+.row{
+  justify-content: space-between;
 }
+
+/* Navbar Indicator */
+.active-section{
+  height: 2px;
+  transition: all 0.25s ease;
+  background: none;
+}
+/* #active-menu{
+  color: #C14397;
+} */
+a:hover .active-section, .activate{
+  width: 100%;
+  background-color: #313b58;
+}
+
+
 /*Service*/
 .service-area .container-fluid .row {
   background: #f2f5fa;
