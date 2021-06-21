@@ -33,46 +33,54 @@ class ChangeRowSize {
   activeNavbar = () => {
     let winScroll = document.documentElement.scrollTop;
     let start = document.getElementById("start");
+    let aboutUs = document.getElementById("aboutUs");
+    let services = document.getElementById("services");
+    let features = document.getElementById("features");
+    let price = document.getElementById("price");
+    let reviews = document.getElementById("reviews");
+    let blogs = document.getElementById("blogs");
+    let contacts = document.getElementById("contacts");
+
+    let home = document.getElementById("home");
     let about = document.getElementById("about");
     let service = document.getElementById("service");
     let feature = document.getElementById("feature");
-    let price = document.getElementById("price");
+    let pricing = document.getElementById("pricing");
     let review = document.getElementById("review");
     let blog = document.getElementById("blog");
     let contact = document.getElementById("contact");
-
+    // console.log(contact.offsetTop);
     
-    // let scrolledHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    if (winScroll >= 0 && winScroll < 400) {
+    if (winScroll >= home.offsetTop && winScroll < about.offsetTop) {
       start.classList.add("activate");
-      about.classList.remove("activate");
-    } else if (winScroll >= 400 && winScroll < 1000){
+      aboutUs.classList.remove("activate");
+    } else if (winScroll >= about.offsetTop && winScroll < service.offsetTop){
       start.classList.remove("activate");
-      about.classList.add("activate");
-      service.classList.remove("activate");
-    } else if (winScroll >= 1000 && winScroll < 1500){
-      about.classList.remove("activate");
-      service.classList.add("activate");
-      feature.classList.remove("activate");
-    } else if (winScroll >= 1500 && winScroll < 3300){
-      service.classList.remove("activate");
-      feature.classList.add("activate");
+      aboutUs.classList.add("activate");
+      services.classList.remove("activate");
+    } else if (winScroll >= service.offsetTop && winScroll < feature.offsetTop){
+      aboutUs.classList.remove("activate");
+      services.classList.add("activate");
+      features.classList.remove("activate");
+    } else if (winScroll >= service.offsetTop && winScroll < pricing.offsetTop){
+      services.classList.remove("activate");
+      features.classList.add("activate");
       price.classList.remove("activate");
-    } else if (winScroll >= 3300 && winScroll < 4110){
-      feature.classList.remove("activate");
+    } else if (winScroll >= pricing.offsetTop && winScroll < review.offsetTop){
+      features.classList.remove("activate");
       price.classList.add("activate");
-      review.classList.remove("activate");
-    } else if (winScroll >= 4110 && winScroll < 5300){
+      reviews.classList.remove("activate");
+    } else if (winScroll >= review.offsetTop && winScroll < blog.offsetTop){
       price.classList.remove("activate");
-      review.classList.add("activate");
-      blog.classList.remove("activate");
-    } else if (winScroll >= 5300 && winScroll < 6115){
-      review.classList.remove("activate");
-      blog.classList.add("activate");
-      contact.classList.remove("activate");
+      reviews.classList.add("activate");
+      blogs.classList.remove("activate");
+    } else if (winScroll >= blog.offsetTop && winScroll < contact.offsetTop){
+      reviews.classList.remove("activate");
+      blogs.classList.add("activate");
+      contacts.classList.remove("activate");
     } else {
-      blog.classList.remove("activate");
-      contact.classList.add("activate");
+      blogs.classList.remove("activate");
+      contacts.classList.add("activate");
     }
   }
 }
