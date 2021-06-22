@@ -4,7 +4,7 @@ class ChangeRowSize {
     this.class2 = "col-lg-6";
     this.class3 = "col-md-3";
     this.class4 = "col-md-6";
-    this.areaMap();
+    window.onload = this.areaMap();
     window.onload = this.toggleClass();
     window.addEventListener("resize", () => {this.toggleClass();});
     window.onload = this.activeNavbar();
