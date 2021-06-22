@@ -545,6 +545,12 @@ a:hover .active-section, .activate{
 .feature-item h4 {
   margin-bottom: 15px;
 }
+/* Coverage Area */
+#serviceArea{
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
 /*Section Title Style*/
 .section-title span {
