@@ -32,7 +32,7 @@ class ChangeRowSize {
     }
   }
   activeNavbar = () => {
-    let winScroll = document.documentElement.scrollTop;
+    let winScroll = document.documentElement.scrollTop + (window.innerHeight / 2.5);
     let start = document.getElementById("start");
     let aboutUs = document.getElementById("aboutUs");
     let services = document.getElementById("services");
