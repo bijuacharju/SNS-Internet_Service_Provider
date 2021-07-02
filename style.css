@@ -879,23 +879,27 @@ input[type="submit"]{
   height: 50px;
 }
 
-.contact-info{
+.contact-details{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 25px
+  padding: 25px;
+  height: 480px;
 }
-.contact-info .cti div {
+.contact-details .cti div {
   margin-left: 30px;
 }
-.contact-info .cti div p{
+.contact-details .cti div p{
   margin: 5px 0;
+  color: #fff;
 }
 
 .location, .phone, .email, .website{
   display: flex;
 }
-
+.cti img{
+  filter: invert(1);
+}
 
 /*Footer Style*/
 .footer-copyright p {
