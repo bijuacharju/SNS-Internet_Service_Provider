@@ -867,18 +867,25 @@ img.shape-bottom {
   border-radius: 5px;
   border: none;
   padding: 10px;
+  color: #3b3663;
 }
 
 textarea{
   margin: 12px 0;
   border-radius: 5px;
+  color: #3b3663;  
 }
 
 input[type="submit"]{
   cursor: pointer;
   height: 50px;
+  background-color: #fff;
+  color: #1dd1a1;
 }
-
+input[type="submit"]:hover{
+  background-color: #1dd1a1;
+  color: #fff;
+}
 .contact-details{
   display: flex;
   flex-direction: column;
