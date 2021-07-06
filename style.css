@@ -187,7 +187,7 @@ label {
 }
 
 .ournet-btn {
-  background: #1dd1a1;
+  background: #0983BB;
   display: inline-block;
   padding: 0 30px;
   font-weight: 500;
@@ -203,7 +203,7 @@ label {
 }
 
 .ournet-btn:hover {
-  box-shadow: 0px 11px 15.36px 0.64px rgba(0, 183, 134, 0.2);
+  box-shadow: 0px 11px 15.36px 0.64px rgba(0, 12, 183, 0.2);
   color: #fff;
 }
 
@@ -561,7 +561,7 @@ iframe{
 
 /*Section Title Style*/
 .section-title span {
-  color: #1dd1a1;
+  color: #0983BB;
   font-weight: 500;
 }
 /*About Style*/
@@ -761,7 +761,7 @@ img.shape-bottom {
 }
 
 .testimonial-item span {
-  color: #1dd1a1;
+  color: #0983BB;
   font-weight: 600;
   font-size: 14px;
 }
@@ -809,21 +809,21 @@ img.shape-bottom {
 .blog-info .ournet-btn {
   padding: 12px 0;
   background: transparent;
-  border: 1px solid #313b58;
-  color: #313b58;
+  border: 1px solid #0983BB;
+  color: #0983BB;
   line-height: 20px;
   width: 140px;
   margin-top: 5px;
 }
 
 .blog-info .ournet-btn:hover {
-  background: #1dd1a1;
+  background: #0983BB;
   color: #fff;
   border-color: #fff;
 }
 /*CTA Style*/
 .cta-area {
-  background-image: url(assets/images/cta-bg.jpg);
+  background-image: url(assets/images/cta-bg.jpg.png);
   background-size: cover;
   background-position: center center;
 }
@@ -868,29 +868,31 @@ img.shape-bottom {
   border: none;
   padding: 10px;
   color: #3b3663;
+  transition: all 0.3s ease-out 0s;
 }
 
 textarea{
   margin: 12px 0;
   border-radius: 5px;
-  color: #3b3663;  
+  color: #3b3663;
+  transition: all 0.3s ease-out 0s;
 }
 
 input[type="submit"]{
   cursor: pointer;
   height: 50px;
   background-color: #fff;
-  color: #1dd1a1;
+  color: #0983BB;
 }
 input[type="submit"]:hover{
-  background-color: #1dd1a1;
+  background-color: #0765df;
   color: #fff;
 }
 .contact-details{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 25px;
+  justify-content: space-between;
+  padding: 5px 25px;
   height: 480px;
 }
 .contact-details .cti div {
@@ -901,11 +903,15 @@ input[type="submit"]:hover{
   color: #fff;
 }
 
-.location, .phone, .email, .website{
+.location, .phone, .mobile, .email, .time, .website{
   display: flex;
 }
 .cti img{
   filter: invert(1);
+}
+.cti{
+  display: flex;
+  align-items: center;
 }
 
 /*Footer Style*/
@@ -942,7 +948,7 @@ input[type="submit"]:hover{
 }
 
 .footer-area {
-  background: linear-gradient(rgba(30, 117, 90, 0.9), rgba(30, 117, 90, 0.9)),
+  background: linear-gradient(rgba(24, 55, 141, 0.9), rgba(24, 55, 141, 0.9)),
     url(assets/images/footer-banner.png) no-repeat;
   background-clip: border-box;
   background-size: cover;
@@ -976,15 +982,15 @@ input[type="submit"]:hover{
 }
 
 .social a:hover {
-  background: #1dd1a1;
-  border-color: #1dd1a1;
+  background: #0983BB;
+  border-color: #0983BB;
 }
 .footer-copyright-item {
   margin-top: 8px;
 }
 /*Preloader Stylse*/
 .ournet-preloader {
-  background: #1dd1a1;
+  background: #0983BB;
   width: 100%;
   height: 100%;
   position: fixed;
