@@ -954,8 +954,8 @@ form i{
 }
 
 .footer-copyright {
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #fff;
 }
 .footer-widget p,
@@ -1097,7 +1097,16 @@ form i{
     margin-left: 0%;
     max-width: 50%;
   }
+}
 
+@media (max-width: 990px){
+
+  .contact-details{
+    margin-top: 30px;
+  }
+  .cti {
+    margin: 10px 0;
+  }
 }
 
 @media (max-width: 768px) {
