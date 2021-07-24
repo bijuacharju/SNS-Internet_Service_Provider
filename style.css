@@ -836,7 +836,7 @@ img.shape-bottom {
 }
 /*CTA Style*/
 .cta-area {
-  background-image: url(assets/images/cta-bg.jpg.png);
+  background-image: url(assets/images/cta-bg.png);
   background-size: cover;
   background-position: center center;
 }
@@ -867,15 +867,14 @@ img.shape-bottom {
 }
 
 .message-box{
-  background: rgba(102, 102, 102, 0.3);
+  /* background: rgba(102, 102, 102, 0.3); */
   padding: 15px 40px;
   border: none;
   border-radius: 5px;
 }
-
 .message-box input{
   width: 100%;
-  height: 40px;
+  height: 50px;
   margin: 12px 0;
   border-radius: 5px;
   border: none;
@@ -892,6 +891,7 @@ textarea{
 }
 
 input[type="submit"]{
+  width: 48%;
   cursor: pointer;
   height: 50px;
   background-color: #fff;
@@ -903,9 +903,11 @@ input[type="submit"]:hover{
 }
 form i{
   position: absolute;
-  padding: 23px 0 0 10px;
+  padding: 28px 0 0 10px;
 }
 .contact-details{
+  background: rgba(24, 55, 141, 0.3);
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -930,6 +932,13 @@ form i{
   align-items: center;
 }
 
+.row-1{
+  display: flex;
+  justify-content: space-between;
+}
+.messageInput1, .messageInput2{
+  width: 48%;
+}
 /*Footer Style*/
 .footer-copyright p {
   margin: 0;
